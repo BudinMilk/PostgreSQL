@@ -35,7 +35,14 @@ namespace PostgreSQL
             conn.Open();
 
             NpgsqlCommand command = new NpgsqlCommand(SQL, conn);
-            MessageBox.Show(Convert.ToString(command.ExecuteScalar()));
+            // MessageBox.Show(Convert.ToString(command.ExecuteReader()));
+            NpgsqlDataReader dr = command.ExecuteReader();
+            while (dr.Read())
+            {
+                MessageBox.Show(Convert.ToString(dr[0]));
+                MessageBox.Show(Convert.ToString(dr[1]));
+                MessageBox.Show(Convert.ToString(dr[2]));
+            }
 
             conn.Close();
         }
@@ -44,5 +51,9 @@ namespace PostgreSQL
         {
             Connect_DB();
         }
+        // 新增 INSERT
+        // 修改 UPDATE
+        // 刪除 DELETE
+        // 查詢 SELECT
     }
 }
