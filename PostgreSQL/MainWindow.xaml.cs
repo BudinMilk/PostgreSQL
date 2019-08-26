@@ -29,51 +29,56 @@ namespace PostgreSQL
         // 新增 INSERT
         private void Insert_DB()
         {
-            /*string connStr = "Server=localhost;Database=testdb;User Id=postgres;Password=abc123456;";
-            string SQL = "SELECT * FROM test_table";
+            string connStr = "Server=localhost;Database=testdb;User Id=postgres;Password=abc123456;";
+            string SQL = "INSERT INTO test_table(name, address) VALUES('Steve', 'US');";
 
             NpgsqlConnection conn = new NpgsqlConnection(connStr);
             conn.Open();
 
             NpgsqlCommand command = new NpgsqlCommand(SQL, conn);
+            //command.Parameters.Add(new NpgsqlParameter("", ""));
+            command.ExecuteNonQuery();
 
-            // MessageBox.Show(Convert.ToString(command.ExecuteReader()));
-            NpgsqlDataReader dr = command.ExecuteReader();
-            while (dr.Read())
-            {
-                MessageBox.Show(Convert.ToString(dr[0]));
-                MessageBox.Show(Convert.ToString(dr[1]));
-                MessageBox.Show(Convert.ToString(dr[2]));
-            }
             command.Dispose();
-            conn.Close();*/
-            /*DataSet ds = new DataSet();
-            adapter.Fill(ds);
-            for (int i = 0; i < ds.Tables[0].Rows.Count; i++)
-            {
-                column columnRecord = new column();
-                columnRecord.division_no = ds.Tables[0].Rows[i]["DBの列名"].ToStirng();
-                (同様の処理を続け、取り出す)
-
-
-            columnRecords.Add(columnRecord);*/
+            conn.Close();
         }
 
         // 修改 UPDATE
         private void Updata_DB()
         {
-            //
+            string connStr = "Server=localhost;Database=testdb;User Id=postgres;Password=abc123456;";
+            string SQL = "UPDATE test_table SET name = 'Bill', address = 'CA' WHERE ID = 8;";
+
+            NpgsqlConnection conn = new NpgsqlConnection(connStr);
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand(SQL, conn);
+            command.ExecuteNonQuery();
+
+            command.Dispose();
+            conn.Close();
         }
+
         // 刪除 DELETE
         private void Delete_DB()
         {
-            //
+            string connStr = "Server=localhost;Database=testdb;User Id=postgres;Password=abc123456;";
+            string SQL = "DELETE FROM test_table WHERE ID = 8;";
+
+            NpgsqlConnection conn = new NpgsqlConnection(connStr);
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand(SQL, conn);
+            command.ExecuteNonQuery();
+
+            command.Dispose();
+            conn.Close();
         }
 
         // 查詢 SELECT
         private void Select_DB()
         {
-            string connStr = "Server=localhost;Database=testdb;User Id=postgres;Password=abc123456;";
+            string connStr = "Server = localhost; Database = testdb; User Id = postgres; Password = abc123456;";
             string SQL = "SELECT * FROM test_table";
 
             NpgsqlConnection conn = new NpgsqlConnection(connStr);
@@ -94,6 +99,21 @@ namespace PostgreSQL
         }        
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Insert_DB();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Updata_DB();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Delete_DB();
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             Select_DB();
         }
