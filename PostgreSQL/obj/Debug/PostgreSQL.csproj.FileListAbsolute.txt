@@ -60,3 +60,12 @@ Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL.csproj.CoreCompileInputs.ca
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL.csproj.CopyComplete
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL.exe
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL.pdb
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignColors.dll
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignThemes.Wpf.dll
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignColors.pdb
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignThemes.Wpf.pdb
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignThemes.Wpf.xml
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\App.baml
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.dll
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.pdb
+Z:\github\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.xml
