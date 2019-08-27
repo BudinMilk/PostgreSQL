@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-Z:\PostgreSQL\PostgreSQL\obj\Debug\
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\
 PostgreSQL
 none
 false
 DEBUG;TRACE
-Z:\PostgreSQL\PostgreSQL\App.xaml
+Z:\github\PostgreSQL\PostgreSQL\App.xaml
 11151548125
 
-6-625981765
-124-1318523025
+72075622044
+124488876420
 MainWindow.xaml;
 
-True
+False
 

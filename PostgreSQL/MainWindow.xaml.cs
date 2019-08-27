@@ -24,6 +24,19 @@ namespace PostgreSQL
         public MainWindow()
         {
             InitializeComponent();
+
+            /*
+              TSCLIB_DLL.openport("TSC TTP-343 Plus");
+              TSCLIB_DLL.setup("100", "100", "3", "10", "0", "0", "0");
+              TSCLIB_DLL.clearbuffer();
+              TSCLIB_DLL.printerfont("10", "10", "4", "0", "1", "1", "TEST PRINTOUT");
+              TSCLIB_DLL.barcode("10", "80", "39", "96", "1", "0", "2", "4", "0987654321");
+              TSCLIB_DLL.sendcommand("BAR 400,200,300,100");
+              TSCLIB_DLL.sendcommand("BOX 10,300,300,300,5");
+              TSCLIB_DLL.windowsfont(10, 10, 80, 0, 2, 0, "arial", "Arial font 80 pt");
+              TSCLIB_DLL.printlabel("1", "1");
+              TSCLIB_DLL.closeport();
+             */
         }
 
         // 新增 INSERT
