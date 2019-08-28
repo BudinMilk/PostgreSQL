@@ -16,18 +16,18 @@
             </Button>
         </Grid>
         <Grid Margin="0 60 0 0">
-            <dragablz:TabablzControl>
+            <dragablz:TabablzControl SelectionChanged="TabControl_SelectionChanged">
                 <dragablz:TabablzControl.InterTabController>
                     <dragablz:InterTabController/>
                 </dragablz:TabablzControl.InterTabController>
                 <TabItem Header="HOME">
-                    <TextBlock Text="Hello World!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!--<TextBlock Text="Hello World!" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
                 </TabItem>
                 <TabItem Header="DESIGN">
-                    <TextBlock Text="Amazing designs!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!--<TextBlock Text="Amazing designs!" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
                 </TabItem>
                 <TabItem Header="HELP">
-                    <TextBlock Text="Ask for any question!" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!--<TextBlock Text="Ask for any question!" HorizontalAlignment="Center" VerticalAlignment="Center"/>-->
                 </TabItem>
                 <TabItem>
                     <TabItem.Header>
@@ -38,10 +38,12 @@
             </dragablz:TabablzControl>
         </Grid>
 
-        <Button Content="Insert" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+        <Frame x:Name="mainFrame"/>
+
+        <!--<Button Content="Insert" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Update" HorizontalAlignment="Left" Margin="200,200,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>
         <Button Content="Delete" HorizontalAlignment="Left" Margin="300,200,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
-        <Button Content="Select" HorizontalAlignment="Left" Margin="400,200,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.441,-0.351" Click="Button_Click_3"/>
+        <Button Content="Select" HorizontalAlignment="Left" Margin="400,200,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.441,-0.351" Click="Button_Click_3"/>-->
 
     </Grid>
 </Window>

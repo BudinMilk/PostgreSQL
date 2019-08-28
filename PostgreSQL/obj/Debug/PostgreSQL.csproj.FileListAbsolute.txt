@@ -47,7 +47,6 @@ Z:\github\PostgreSQL\PostgreSQL\bin\Debug\System.Numerics.Vectors.xml
 Z:\github\PostgreSQL\PostgreSQL\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 Z:\github\PostgreSQL\PostgreSQL\bin\Debug\System.Threading.Tasks.Extensions.xml
 Z:\github\PostgreSQL\PostgreSQL\bin\Debug\System.ValueTuple.xml
-Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL.csprojAssemblyReference.cache
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\MainWindow.g.cs
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\App.g.cs
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL_MarkupCompile.cache
@@ -69,3 +68,8 @@ Z:\github\PostgreSQL\PostgreSQL\obj\Debug\App.baml
 Z:\github\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.dll
 Z:\github\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.pdb
 Z:\github\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.xml
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\PostgreSQL.csprojAssemblyReference.cache
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page1.g.cs
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page2.g.cs
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page1.baml
+Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page2.baml

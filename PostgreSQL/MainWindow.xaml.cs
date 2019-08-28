@@ -130,5 +130,32 @@ namespace PostgreSQL
         {
             Select_DB();
         }
+
+        private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Page1 page1 = new Page1();
+            Page2 page2 = new Page2();
+
+            string tabItem = ((sender as TabControl).SelectedItem as TabItem).Header as string;
+
+            switch (tabItem)
+            {
+                case "HOME":
+                    page2 = null;
+                    mainFrame.NavigationService.Navigate(page1);
+                    break;
+
+                case "DESIGN":
+                    page1 = null;
+                    mainFrame.NavigationService.Navigate(page2);
+                    break;
+
+                case "HELP":
+                    break;
+
+                default:
+                    return;
+            }
+        }
     }
 }
