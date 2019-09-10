@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Page2">
 
-    <Grid>
-        <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" Text="Page2"/>
-    </Grid>
+    <DataGrid x:Name="dataGridView1" HorizontalAlignment="Left" Height="500" Margin="0,120,0,0" VerticalAlignment="Top" Width="800"/>
+
+
 </Page>

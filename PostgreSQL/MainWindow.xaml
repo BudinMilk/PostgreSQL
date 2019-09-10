@@ -7,13 +7,15 @@
         mc:Ignorable="d"
         xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
-        Height="600" Width="1080" WindowStartupLocation="CenterScreen">
+        Height="768" Width="1080" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid Height="60" VerticalAlignment="Top" Background="#2196F3">
             <TextBlock Text="My App" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" FontFamily="Champagne &amp; Limousines"/>
+            <!--
             <Button HorizontalAlignment="Right" VerticalAlignment="Center" Background="{x:Null}" BorderBrush="{x:Null}">
                 <materialDesign:PackIcon Kind="Power"/>
             </Button>
+            -->
         </Grid>
         <Grid Margin="0 60 0 0">
             <dragablz:TabablzControl SelectionChanged="TabControl_SelectionChanged">
@@ -38,7 +40,7 @@
             </dragablz:TabablzControl>
         </Grid>
 
-        <Frame x:Name="mainFrame"/>
+        <Frame x:Name="mainFrame" NavigationUIVisibility="Hidden"/>
 
         <!--<Button Content="Insert" HorizontalAlignment="Left" Margin="100,200,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Update" HorizontalAlignment="Left" Margin="200,200,0,0" VerticalAlignment="Top" Click="Button_Click_1"/>

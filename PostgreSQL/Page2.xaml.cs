@@ -12,6 +12,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Npgsql;
+using System.Data;
 
 namespace PostgreSQL
 {
@@ -23,6 +25,64 @@ namespace PostgreSQL
         public Page2()
         {
             InitializeComponent();
+            // Select_DB();
+        }
+
+        void fillingDataGrid()
+        {
+            DataTable dt = new DataTable();
+            DataColumn id = new DataColumn("id", typeof(int));
+            DataColumn name = new DataColumn("name", typeof(string));
+            DataColumn address = new DataColumn("address", typeof(string));
+
+            dt.Columns.Add(id);
+            dt.Columns.Add(name);
+            dt.Columns.Add(address);
+
+            DataRow firstRow = dt.NewRow();
+            // firstRow[i] = Convert.ToString(dr[i]);
+        }
+
+        // 查詢 SELECT
+        private void Select_DB()
+        {
+            string connStr = "Server = localhost; Database = testdb; User Id = postgres; Password = abc123456;";
+            string SQL = "SELECT * FROM test_table";
+
+            NpgsqlConnection conn = new NpgsqlConnection(connStr);
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand(SQL, conn);
+
+            // MessageBox.Show(Convert.ToString(command.ExecuteReader()));
+            NpgsqlDataReader dr = command.ExecuteReader();
+
+            DataTable dt = new DataTable();
+            DataColumn id = new DataColumn("id", typeof(int));
+            DataColumn name = new DataColumn("name", typeof(string));
+            DataColumn address = new DataColumn("address", typeof(string));
+
+            dt.Columns.Add(id);
+            dt.Columns.Add(name);
+            dt.Columns.Add(address);
+
+            DataRow firstRow = dt.NewRow();
+
+            while (dr.Read())
+            {
+                for (int i = 0; i < 3; i++)
+                {
+                    firstRow[i] = Convert.ToString(dr[i]);
+                }
+                /*MessageBox.Show(Convert.ToString(dr[0]));
+                MessageBox.Show(Convert.ToString(dr[1]));
+                MessageBox.Show(Convert.ToString(dr[2]));*/
+            }
+            dt.Rows.Add(firstRow);
+            dataGridView1.ItemsSource = dt.DefaultView;
+
+            command.Dispose();
+            conn.Close();
         }
     }
 }
