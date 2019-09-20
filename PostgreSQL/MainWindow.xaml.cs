@@ -25,13 +25,25 @@ namespace PostgreSQL
         {
             InitializeComponent();
 
-            /*
+            /* 印圖片方法一
             TSCLIB_DLL.openport("printerName");
             TSCLIB_DLL.setup("80 mm", "51 mm", "4", "15", "0", "3 mm", "0");
             TSCLIB_DLL.clearbuffer();
 
             // LOGO
             TSCLIB_DLL.sendcommand("PUTBMP 19,15,\"logo-bmp.BMP\"");
+            TSCLIB_DLL.printlabel("1", "1");
+            TSCLIB_DLL.closeport();
+            */
+
+            /* 印圖片方法二
+            TSCLIB_DLL.openport("PrinterName");
+            TSCLIB_DLL.setup("100", "100", "4", "8", "1", "3.42", "0");
+            TSCLIB_DLL.clearbuffer();
+
+            TSCLIB_DLL.downloadpcx(@"\\PathToPcxFile\test.pcx", "test.pcx");
+            TSCLIB_DLL.sendcommand("PUTPCX 35," + y + ",\"test.pcx\"");
+
             TSCLIB_DLL.printlabel("1", "1");
             TSCLIB_DLL.closeport();
             */
