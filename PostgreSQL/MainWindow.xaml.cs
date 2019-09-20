@@ -26,6 +26,17 @@ namespace PostgreSQL
             InitializeComponent();
 
             /*
+            TSCLIB_DLL.openport("printerName");
+            TSCLIB_DLL.setup("80 mm", "51 mm", "4", "15", "0", "3 mm", "0");
+            TSCLIB_DLL.clearbuffer();
+
+            // LOGO
+            TSCLIB_DLL.sendcommand("PUTBMP 19,15,\"logo-bmp.BMP\"");
+            TSCLIB_DLL.printlabel("1", "1");
+            TSCLIB_DLL.closeport();
+            */
+
+            /*
               TSCLIB_DLL.openport("TSC TTP-343 Plus");
               TSCLIB_DLL.setup("100", "100", "3", "10", "0", "0", "0");
               TSCLIB_DLL.clearbuffer();
