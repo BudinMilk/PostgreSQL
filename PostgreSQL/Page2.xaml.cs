@@ -25,7 +25,7 @@ namespace PostgreSQL
         public Page2()
         {
             InitializeComponent();
-            // Select_DB();
+            getData();
         }
 
         void fillingDataGrid()
@@ -83,6 +83,32 @@ namespace PostgreSQL
 
             command.Dispose();
             conn.Close();
+        }
+
+        private void getData()
+        {
+            DataTable dt = new DataTable();
+            // string conn = "Server = localhost; Database = testdb; User Id = postgres; Password = abc123456;";
+            // string SQL = "SELECT * FROM test_table";
+            NpgsqlConnection conn =
+                new NpgsqlConnection("Server=127.0.0.1; Port=5432;" +
+                    "User Id=postgres; Password=abc123456;" +
+                    "Database=testdb;");
+            conn.Open();
+
+            NpgsqlCommand command = new NpgsqlCommand("select * from test_table", conn);
+
+            try
+            {
+                NpgsqlDataReader reader = command.ExecuteReader();
+                dt.Load(reader);
+                dataGridView1.ItemsSource = dt.DefaultView;
+            }
+
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }

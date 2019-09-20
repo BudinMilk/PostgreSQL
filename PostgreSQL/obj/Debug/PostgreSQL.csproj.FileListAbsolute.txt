@@ -73,3 +73,16 @@ Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page1.g.cs
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page2.g.cs
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page1.baml
 Z:\github\PostgreSQL\PostgreSQL\obj\Debug\Page2.baml
+Z:\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.dll
+Z:\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignColors.dll
+Z:\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignThemes.Wpf.dll
+Z:\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.pdb
+Z:\PostgreSQL\PostgreSQL\bin\Debug\Dragablz.xml
+Z:\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignColors.pdb
+Z:\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignThemes.Wpf.pdb
+Z:\PostgreSQL\PostgreSQL\bin\Debug\MaterialDesignThemes.Wpf.xml
+Z:\PostgreSQL\PostgreSQL\obj\Debug\Page1.g.cs
+Z:\PostgreSQL\PostgreSQL\obj\Debug\Page2.g.cs
+Z:\PostgreSQL\PostgreSQL\obj\Debug\App.baml
+Z:\PostgreSQL\PostgreSQL\obj\Debug\Page1.baml
+Z:\PostgreSQL\PostgreSQL\obj\Debug\Page2.baml
